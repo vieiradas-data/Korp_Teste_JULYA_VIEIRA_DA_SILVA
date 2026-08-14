@@ -9,13 +9,13 @@ O desafio consiste no desenvolvimento de um sistema de emissão de notas fiscais
 - Serviço de Estoque - responsável pelo controle de produtos e saldos; 
 - Serviço de Faturamento - responsável pela gestão das notas fiscais.
 
-Também é exigida a persistência física dos dados em um banco de dados real e a implementação de um cenário em que um dos microsserviços falhe, com tratamento e feedback apropriado ao usuário. O banco de dados é de escolha do candidato. Neste projeto, optei pelo PostgreSQL.
+Também é exigida a persistência dos dados em um banco de dados real e a implementação de um cenário em que um dos microsserviços falhe, com tratamento e feedback apropriado ao usuário. O banco de dados é de escolha do candidato. Neste projeto, optei pelo PostgreSQL.
 
 
 # 2. Visão Geral da Arquitetura.
 A primeira compreensão sobre o desenvolvimento foi seperar as responsabilidades e dissecar os caminhos:
 
-ÚSUARIO -> ANGULAR -> API/HTTP -> BACKEND -> BANCO DE DADOS
+USUÁRIO -> ANGULAR -> API/HTTP -> BACKEND -> BANCO DE DADOS
 
 Para dissecar o caminho, primeiro precisei entender sobre como cada tecnologia deve interagir: Angular pergunta e apresenta. A API transporta. O Backend processa. O Banco armazena - simples de entender, mas de extrema importância.
 
