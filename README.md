@@ -132,8 +132,9 @@ E o RxJS? Ele é quase como: "Quando chegar a resposta, faça isso". Mas por que
   
 - O que acontece se o usuário repetir uma ação?
   
-A nota começa como Aberta -> é emitida -> estoque é atualizado -> nota passa para Fechada -> uma nota fechada não pode ser impressa novamente.
-Isso já é uma proteção prevista no requisito obrigatório, estão descartei a idempotência.
+  A nota começa como Aberta -> é emitida -> estoque é atualizado -> nota passa para Fechada -> uma nota fechada não pode ser impressa            novamente.
+  
+  Isso já é uma proteção prevista no requisito obrigatório, estão descartei a idempotência.
 
 # Estas são decisões iniciais. Elas serão refinadas durante a modelagem do banco e a implementação dos microsserviços.
   
