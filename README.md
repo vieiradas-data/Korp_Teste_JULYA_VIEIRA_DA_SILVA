@@ -17,7 +17,7 @@ A primeira compreensão sobre o desenvolvimento foi seperar as responsabilidades
 
 USUÁRIO -> ANGULAR -> API/HTTP -> BACKEND -> BANCO DE DADOS
 
-Para dissecar o caminho, primeiro precisei entender sobre como cada tecnologia deve interagir: Angular pergunta e apresenta. A API transporta. O Backend processa. O Banco armazena - simples de entender, mas de extrema importância.
+Para dissecar o caminho, primeiro precisei entender sobre como cada tecnologia deve interagir: Angular pergunta e apresenta. A API transporta. O Backend processa. O Banco armazena. Simples de entender, mas de extrema importância.
 
 # 3. Microsserviços.
 O desafio exige dois microsserviços: Estoque e Faturamento.
