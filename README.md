@@ -59,25 +59,25 @@ A concorrência é tecnicamente interessante, mas será considerada somente depo
 Biblioteca utilizada para trabalhar com fluxos de informações que acontecem ao longo do tempo. No Angular, isso aparece principalmente na comunicação assíncrona. Sobre isso, tentei pensar com uma analogia - IFOOD:
 
   Angular
-  "Quero um combo do BK!"
+ -> "Quero um combo do BK!"
       
-  API/HTTP 🛵
-  Leva o pedido
+  API/HTTP 
+ -> Leva o pedido
       
   Backend
-  Prepara a resposta
+ -> Prepara a resposta
       
-  API/HTTP 🛵
-  Traz a resposta
+  API/HTTP 
+ -> Traz a resposta
       
-  Observable 👀
-  Acompanha o resultado
+  Observable 
+ -> Acompanha o resultado
       
-  RxJS 🧰
-  Trabalha com o resultado
+  RxJS 
+ -> Trabalha com o resultado
       
   Angular
-  Mostra na tela
+ -> Mostra na tela
 
 Mas por que essas adições? Bem, durante o estudo do Angular, surgiu a necessidade de entender como o sistema lida com informações que não chegam imediatamente. Por exemplo, quando o Angular solicita os produtos ao Backend, o backend precisa processar a solicitação e depois devolver uma resposta. O Angular não sabe exatamente quando essa resposta chegará. Foi nesse contexto que conheci o Observable.
 
