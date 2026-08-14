@@ -95,27 +95,43 @@ E o RxJS? Ele é quase como: "Quando chegar a resposta, faça isso". Mas por que
 
 # 6. "Perguntas que o projeto me fez".
 - Onde cada dado será armazenado?
+  
   Produtos, código, descrição e saldo: pertencem ao Serviço de Estoque e serão persistidos no PostgreSQL.
+  
   Notas, número, status e itens da nota: pertencem ao Serviço de Faturamento e serão persistidos no PostgreSQL.
+  
   A estrutura exata das tabelas ainda será definida.
 
 - Quem pode alterar esse dado?
+  
   Produtos e saldo: Serviço de Estoque.
+  
   Notas e status: Serviço de Faturamento.
+  
   O Angular não altera diretamente o banco; ele solicita operações através da API.
   
+  
 - Quem precisa consultar esse dado?
+  
   O Angular precisa consultar produtos e notas para apresentar as informações ao usuário.
+  
   O Faturamento precisa consultar informações do Estoque durante a emissão da nota.
+  
   O Estoque precisa receber a solicitação de atualização do saldo.
+  
 
 - Como um serviço conversa com o outro?
+  
   Por meio de API/HTTP.
+
   
 - O que acontece se um serviço estiver indisponível?
+  
   O sistema deve identificar a falha e informar o usuário de maneira apropriada, conforme requisito obrigatório do teste.
   
+  
 - O que acontece se o usuário repetir uma ação?
+  
 A nota começa como Aberta -> é emitida -> estoque é atualizado -> nota passa para Fechada -> uma nota fechada não pode ser impressa novamente.
 Isso já é uma proteção prevista no requisito obrigatório, estão descartei a idempotência.
 
